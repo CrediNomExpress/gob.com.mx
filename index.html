@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Crédito por Nómina | Gobierno, SEP, IMSS</title>
+
+<!-- 🔥 PIXEL META -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', 'TU_PIXEL_ID');
+fbq('track', 'PageView');
+</script>
+
+<style>
+body{
+  margin:0;
+  font-family:'Segoe UI',sans-serif;
+  background:#f4f6f9;
+  color:#333;
+}
+
+/* 🔴 BARRA */
+.topbar{
+  background:linear-gradient(90deg,#ff0000,#b30000);
+  color:white;
+  text-align:center;
+  padding:10px;
+  font-weight:bold;
+}
+
+/* HERO */
+.hero{
+  height:90vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:white;
+  position:relative;
+  background-size:cover;
+  background-position:center;
+}
+
+.hero::before{
+  content:"";
+  position:absolute;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.65);
+}
+
+.hero-content{
+  position:relative;
+  z-index:2;
+  max-width:700px;
+  padding:20px;
+}
+
+.hero h1{
+  font-size:48px;
+  font-weight:800;
+}
+
+.hero p{
+  font-size:20px;
+}
+
+/* BOTON */
+.btn{
+  background:#25D366;
+  color:white;
+  padding:15px 25px;
+  border-radius:10px;
+  text-decoration:none;
+  display:inline-block;
+  margin-top:20px;
+  font-weight:bold;
+  box-shadow:0 10px 25px rgba(0,0,0,0.3);
+  transition:0.3s;
+}
+.btn:hover{ transform:scale(1.05); }
+
+/* SECCIONES */
+.section{
+  padding:70px 20px;
+  text-align:center;
+}
+
+/* CARDS */
+.cards{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:20px;
+}
+.card{
+  background:white;
+  padding:20px;
+  border-radius:15px;
+  width:220px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* TESTIMONIOS */
+.testimonial{
+  background:white;
+  padding:20px;
+  border-radius:12px;
+  max-width:300px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* FORM */
+.form{
+  max-width:420px;
+  margin:auto;
+  background:white;
+  padding:25px;
+  border-radius:15px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+.form input,.form select{
+  width:95%;
+  padding:12px;
+  margin:10px 0;
+  border-radius:8px;
+  border:1px solid #ccc;
+}
+
+/* FAQ */
+.faq-item{
+  background:white;
+  margin:10px auto;
+  max-width:700px;
+  padding:15px;
+  border-radius:10px;
+  cursor:pointer;
+}
+.faq-answer{
+  display:none;
+  margin-top:10px;
+}
+
+/* WHATS */
+#whatsapp{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  width:60px;
+  height:60px;
+  border-radius:50%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="topbar">🔥 Aprobaciones hoy mismo para Gobierno y Nómina</div>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-content">
+    <h1>Crédito inmediato vía nómina</h1>
+    <p>Gobierno, SEP, IMSS, Policías y Pensionados</p>
+
+    <div>
+      <span style="background:#25D366;padding:8px 12px;border-radius:20px;">✔ Sin buró</span>
+      <span style="background:#25D366;padding:8px 12px;border-radius:20px;">⚡ Rápido</span>
+      <span style="background:#25D366;padding:8px 12px;border-radius:20px;">📲 Digital</span>
+    </div>
+
+    <a href="#formulario" class="btn" onclick="fbq('track','Lead');">
+      Solicitar ahora
+    </a>
+
+    <p>⚡ Respuesta en minutos</p>
+    <p>🔒 Datos seguros | ⭐ +500 clientes</p>
+
+    <p id="contador"></p>
+  </div>
+</section>
+
+<!-- SEGMENTOS -->
+<section class="section">
+  <h2>¿Aplica para ti?</h2>
+  <div class="cards">
+    <div class="card">SEP</div>
+    <div class="card">IMSS</div>
+    <div class="card">Policía</div>
+    <div class="card">Pensionado</div>
+    <div class="card">IPN</div>
+  </div>
+</section>
+
+<!-- RESEÑAS -->
+<section class="section">
+  <h2>Clientes satisfechos</h2>
+  <div class="cards">
+    <div class="testimonial">⭐⭐⭐⭐⭐<br>Me aprobaron el mismo día</div>
+    <div class="testimonial">⭐⭐⭐⭐⭐<br>Muy fácil todo</div>
+    <div class="testimonial">⭐⭐⭐⭐⭐<br>Sin buró</div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section">
+  <h2>Preguntas frecuentes</h2>
+
+  <div class="faq-item" onclick="toggleFAQ(this)">
+    ¿Revisan buró?
+    <div class="faq-answer">No es necesario.</div>
+  </div>
+
+  <div class="faq-item" onclick="toggleFAQ(this)">
+    ¿Cuánto tarda?
+    <div class="faq-answer">Mismo día o 24h.</div>
+  </div>
+</section>
+
+<!-- FORM -->
+<section class="section" id="formulario">
+  <h2>Solicita tu crédito</h2>
+
+  <div class="form">
+    <input type="text" id="nombre" placeholder="Nombre">
+    <input type="tel" id="telefono" placeholder="Teléfono">
+
+    <select id="dependencia">
+      <option value="">Selecciona dependencia</option>
+      <option>SEP</option>
+      <option>IMSS</option>
+      <option>Policía</option>
+      <option>Pensionado</option>
+    </select>
+
+    <button class="btn" onclick="enviarWhats()">Enviar</button>
+  </div>
+</section>
+
+<!-- WHATS -->
+<a href="https://wa.me/525654011167" target="_blank" id="whatsapp">
+<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" width="30">
+</a>
+
+<script>
+document.getElementById("hero").style.backgroundImage =
+"url('https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&w=1200')";
+
+function enviarWhats(){
+let n=document.getElementById("nombre").value;
+let t=document.getElementById("telefono").value;
+let d=document.getElementById("dependencia").value;
+
+let msg=`Hola quiero crédito:%0A${n}%0A${t}%0A${d}`;
+window.open(`https://wa.me/525654011167?text=${msg}`);
+}
+
+function toggleFAQ(el){
+let ans=el.querySelector(".faq-answer");
+ans.style.display=ans.style.display==="block"?"none":"block";
+}
+
+setInterval(()=>{
+let n=Math.floor(Math.random()*5)+3;
+document.getElementById("contador").innerText=
+`🔥 ${n} personas están solicitando ahora`;
+},3000);
+</script>
+
+</body>
+</html>
