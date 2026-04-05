@@ -1,0 +1,2 @@
+# gob.com.mx
+LANDINPAGE-CREDINOMINAGOB
