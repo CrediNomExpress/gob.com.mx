@@ -1,2 +1,2 @@
-# gob.com.mx
+# credito-nomina
 LANDINPAGE-CREDINOMINAGOB
